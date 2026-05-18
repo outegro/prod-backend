@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const port = Number(process.env.PORT ?? 3000);
-  const corsOrigin = (process.env.CORS_ORIGIN ?? 'https://outegro.com')
+  const corsOrigin = (process.env.CORS_ORIGIN ?? 'https://outegro.dev')
     .split(',')
     .map((origin) => origin.trim())
     .filter(Boolean);
